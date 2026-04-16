@@ -16,3 +16,5 @@ Y asi con el resto de bits viendo que los de mayor significado sean iguales y en
 Si sucede uno de estos casos devolvemos 1 sino 0.
 
 Devolvemos 1 0 ya que aca nos excede totalmente adonde saltamos si bien podriamos simular la constante y que devuelva eso si es 1 en realidad no tendriamos que devolver en el caso que no se cumpla la condición ya que no disponemos de lo que seguiria en el codigo.
+
+Lo anterior rige para la versión unsigned,la versión signed en lo unico que cambia es que en el primer bit se le hace un not para compararlo al de R2 (ya que se tiene bit de A 1 y de B 0,siendo 1 menor por representar los negativos).Todo el resto de los bits se comporataran de la misma manera que en la versión unsigned.
