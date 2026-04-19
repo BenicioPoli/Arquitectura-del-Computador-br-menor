@@ -36,6 +36,8 @@ N V Z
 0 1 1
 1 0 1
 1 1 0
+```
+
 Esto se resuelve con un xor,como se ve en la tabla, y el resultado dira si tenemos que saltar o no
 
 Para esto haremos otra adaptación y conectaremos este xor a otro multiplexor, y esta vez en el puerto 1 del multiplexor colocaremos la constante que sacamos al inicio y si el xor da 1 saltaremos a esa constante (en realidad esa constante representa algo que nos lleva adonde hay que saltar pero aca lo resumiremos a que saltamos a la constante),si no es 1 el xor se supone que no hay que saltar seguimos el camino normal como aca no lo conocemos vamos a devolver un numero que ingresaremos a mano en el puerto 0 del multiplexor.
